@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="./style.css" />
+    <title>Sensor de temperatura</title>
+  </head>
+  <body>
+    <div class="contenedor">
+      <div class="carcasa">
+
+        <div class='upper'>
+
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Nest_Labs_logo.svg/1200px-Nest_Labs_logo.svg.png" alt="marca-termostato">
+          
+          <div class="pantallaH">
+            <p id='hum'>33</p>
+          </div>
+          
+          <div class="pantallaT">
+            <p id="temp">25</p>
+          </div>
+        
+        </div>
+          
+        <div class='lower'>
+          <div class="cajon1">
+             <div class="mini-boton">
+             <i class="fas fa-power-off"></i>
+             </div>
+          </div>
+
+          <div class="cajon2">
+            <div class="rueda">
+              <div class="deco"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
